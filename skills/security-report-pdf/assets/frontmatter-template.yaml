@@ -1,0 +1,70 @@
+---
+title: "Security Assessment Report"
+subtitle: "Application Security Review — Family Hub 2.0"
+author: "Julian Johnson"
+date: \today
+lang: en
+
+# Title page
+titlepage: true
+titlepage-color: "1E1E1E"
+titlepage-text-color: "FFFFFF"
+titlepage-rule-color: "FFFFFF"
+titlepage-rule-height: 2
+
+# Table of contents
+toc-own-page: true
+toc-depth: 3
+
+# Sections
+numbersections: true
+
+# Links
+colorlinks: true
+linkcolor: blue
+urlcolor: blue
+
+# Severity colors for finding labels in tables and headings
+header-includes:
+	- |
+		```{=latex}
+		\usepackage{xcolor}
+		\definecolor{severitycritical}{HTML}{7E57C2}
+		\definecolor{severityhigh}{HTML}{C62828}
+		\definecolor{severitymedium}{HTML}{C9A227}
+		\definecolor{severitylow}{HTML}{1565C0}
+		\definecolor{severityinfo}{HTML}{6B7280}
+		\definecolor{codebg}{HTML}{111827}
+		\definecolor{codefg}{HTML}{E5E7EB}
+		\definecolor{codekw}{HTML}{93C5FD}
+		\definecolor{codestr}{HTML}{FDE68A}
+		\definecolor{codecmt}{HTML}{9CA3AF}
+		\newcommand{\sevcritical}{\textbf{\textcolor{severitycritical}{Critical}}}
+		\newcommand{\sevhigh}{\textbf{\textcolor{severityhigh}{High}}}
+		\newcommand{\sevmedium}{\textbf{\textcolor{severitymedium}{Medium}}}
+		\newcommand{\sevlow}{\textbf{\textcolor{severitylow}{Low}}}
+		\newcommand{\sevinfo}{\textbf{\textcolor{severityinfo}{Informational}}}
+		\lstset{
+			backgroundcolor=\color{codebg},
+			basicstyle=\ttfamily\footnotesize\color{codefg},
+			keywordstyle=\color{codekw},
+			stringstyle=\color{codestr},
+			commentstyle=\color{codecmt},
+			breaklines=true,
+			frame=single,
+			framerule=0pt,
+			rulecolor=\color{codebg}
+		}
+		```
+
+# Code blocks — set to true if long lines overflow the page
+listings: true
+
+# Page geometry (A4 default; switch to "letterpaper" for US Letter)
+# papersize: a4
+
+# Header/footer (optional)
+# header-left: "Confidential"
+# header-right: "Family Hub 2.0"
+# footer-center: "Page \\thepage"
+---
