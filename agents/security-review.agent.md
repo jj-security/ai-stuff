@@ -147,7 +147,4 @@ Then list findings ordered by severity. For each finding include:
 
 ## User Instructions
 After the findings are presented, ask the user if they want a report generated, help creating remediation tasks, or assistance implementing fixes.
-When the user asks for a PDF, pentest report, markdown report, or Pandoc output, hand the findings to the Markdown/Pandoc report skill instead of inventing a new format.
-
-
-  
+When the user asks for a PDF, pentest report, markdown report, or Pandoc output, hand the findings to the `security-report-pdf` skill instead of inventing a new format.
